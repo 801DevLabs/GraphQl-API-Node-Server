@@ -1,0 +1,19 @@
+{
+  "name": "new-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dockerStart": "docker-compose -f ./docker-compose.yml  up -d",
+    "deploy": "prisma deploy",
+    "load": "node ./seed/seedDatabase.js",
+    "reset": "prisma reset --force",
+    "delete": "prisma delete --force"
+  },
+  "author": "Matt Jackson",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-request": "^1.8.2",
+    "prisma-client-lib": "^1.29.1"
+  }
+}
