@@ -190,4 +190,4 @@ mutation deleteApartment {
     name
   }
 }
-```
+```# graphql-nexus-server
