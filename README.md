@@ -36,7 +36,7 @@ query getApartmentsOrem {
   apartments(where: {
     city: "Orem"
   }) {
-  id
+    id
     name
     city
     address
