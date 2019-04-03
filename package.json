@@ -8,12 +8,21 @@
     "deploy": "prisma deploy",
     "load": "node ./seed/seedDatabase.js",
     "reset": "prisma reset --force",
-    "delete": "prisma delete --force"
+    "delete": "prisma delete --force",
+    "start": "ts-node-dev --no-notify --respawn --transpileOnly ./"
   },
   "author": "Matt Jackson",
   "license": "ISC",
   "dependencies": {
+    "graphql": "^14.2.1",
     "graphql-request": "^1.8.2",
-    "prisma-client-lib": "^1.29.1"
+    "graphql-yoga": "^1.17.4",
+    "nexus": "^0.11.6",
+    "nexus-prisma": "^0.3.5",
+    "prisma-client-lib": "^1.29.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.4.1"
   }
 }
