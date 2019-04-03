@@ -114,3 +114,80 @@ mutation deleteApartment {
   }
 }
 ```
+
+## Copy and paste the following queries and mutations into the prisma playground
+```
+query getApartments {
+  apartments {
+    id
+    name
+    city
+    address
+    phone
+  }
+}
+
+query getApartmentsOrem {
+  apartments(where: {
+    city: "Orem"
+  }) {
+	  id
+    name
+    city
+    address
+    phone
+  }
+}
+
+query getApartmentById {
+  apartments(where: {
+    id: "cju1cvvav00410749szyo26ch"
+  }) {
+	  id
+    name
+    city
+    address
+    phone
+  }
+}
+
+mutation addApartment {
+  createApartment(data: {
+    name: "Concord at Geneva"
+    city: "Vineyard"
+    address: "125 Mill Rd"
+    phone: "385-203-1000"
+  })
+  {
+    id
+    name
+    city
+    address
+    phone
+  }
+}
+
+mutation updateApartment {
+  updateApartment(
+    data: {
+      city: "Provo"
+    }
+    where: {
+      id: "cju1cvvav00410749szyo26ch"
+    }
+  ) {
+    id
+    name
+    city
+  }
+}
+
+mutation deleteApartment {
+  deleteApartment(where:{
+    id: "cju1cvvav00410749szyo26ch"
+  }) {
+    id
+    name
+  }
+}
+```
