@@ -52,7 +52,7 @@ query getApartmentById {
   apartments(where: {
     id: "cjtyj55ka009x0874nanhe1qn"
   }) {
-  id
+    id
     name
     city
     address
