@@ -1,5 +1,5 @@
 
-# GraphQL API
+# GraphQL API Node Server
 
 ## Setup
 
@@ -115,7 +115,7 @@ mutation deleteApartment {
 }
 ```
 
-## Copy and paste the following queries and mutations into the prisma playground
+## Quick access to all queries and mutations
 ```
 query getApartments {
   apartments {
